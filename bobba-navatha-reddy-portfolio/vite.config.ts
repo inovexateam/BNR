@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
-    base: '/https://inovexateam.github.io/BNR/',   // 👈 IMPORTANT: replace <repo-name> with your GitHub repo name
+    base: '/BNR/',
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
