@@ -18,6 +18,15 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Clean npm cache
+        run: npm cache clean --force
+
+      - name: Remove lock file and node_modules
+        run: |
+          rm -f package-lock.json
+          rm -rf node_modules
+        working-directory: ./bobba-navatha-reddy-portfolio
+
       - name: Install dependencies
         run: npm install
         working-directory: ./bobba-navatha-reddy-portfolio
